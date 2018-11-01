@@ -1,11 +1,3 @@
-[submodule "SLL"]
-	path = Supporting Libraries/SLL
-	url = https://github.com/tferguson7337/simple-logging-library
-	branch = master
-[submodule "SUTL"]
-	path = Supporting Libraries/SUTL
-	url = https://github.com/tferguson7337/simple-unit-test-library
-	branch = master
 [submodule "CommonCode"]
 	path = Common
 	url = https://github.com/tferguson7337/common-code
