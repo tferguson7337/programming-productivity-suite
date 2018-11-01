@@ -20,9 +20,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassGeneratorUnitTests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Productivity Projects", "Productivity Projects", "{C28EF064-289E-4EF5-A819-15E8BE1A0B4B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleLoggingLibrary", "Supporting Libraries\SLL\SimpleLoggingLibrary\SimpleLoggingLibrary.vcxproj", "{601D2081-CEA2-4B6D-A33C-2E5E9C17D0DB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleLoggingLibrary", "SupportingLibraries\SLL\SimpleLoggingLibrary\SimpleLoggingLibrary.vcxproj", "{601D2081-CEA2-4B6D-A33C-2E5E9C17D0DB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleUnitTestLibrary", "Supporting Libraries\SUTL\SimpleUnitTestLibrary\SimpleUnitTestLibrary.vcxproj", "{1C99CE1E-96FB-422B-9FF7-2134606C4DEB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleUnitTestLibrary", "SupportingLibraries\SUTL\SimpleUnitTestLibrary\SimpleUnitTestLibrary.vcxproj", "{1C99CE1E-96FB-422B-9FF7-2134606C4DEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

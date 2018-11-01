@@ -2,3 +2,11 @@
 	path = Common
 	url = https://github.com/tferguson7337/common-code
 	branch = master
+[submodule "SLL"]
+	path = SupportingLibraries/SLL
+	url = https://github.com/tferguson7337/simple-logging-library
+	branch = master
+[submodule "SUTL"]
+	path = SupportingLibraries/SUTL
+	url = https://github.com/tferguson7337/simple-unit-test-library
+	branch = master
