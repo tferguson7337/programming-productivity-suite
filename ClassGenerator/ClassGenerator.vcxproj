@@ -96,6 +96,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -114,6 +116,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -134,6 +138,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -157,6 +163,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -166,7 +174,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\ConfigFlag.cpp" />
+    <ClCompile Include="Source\ConfigPackage.cpp" />
     <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Headers\Macros.h" />
+    <ClInclude Include="..\Common\Headers\StringUtil.hpp" />
+    <ClInclude Include="..\Common\Headers\Types.h" />
+    <ClInclude Include="..\Common\Headers\Uncopyable.h" />
+    <ClInclude Include="..\Common\Headers\Unmovable.h" />
+    <ClInclude Include="Headers\ConfigFlag.h" />
+    <ClInclude Include="Headers\ConfigPackage.h" />
+    <ClInclude Include="Headers\Logging.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

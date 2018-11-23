@@ -13,10 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{6057216f-0b65-4801-8616-6f2c489395be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{b18aed66-6327-40c5-a9ac-267a34c75627}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\ConfigPackage.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ConfigFlag.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\ConfigPackage.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ConfigFlag.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Headers\Macros.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Headers\StringUtil.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Headers\Types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Headers\Uncopyable.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Headers\Unmovable.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Logging.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
