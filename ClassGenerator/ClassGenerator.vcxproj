@@ -97,11 +97,11 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;$(SolutionDir)SupportingLibraries\CLP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SLLD$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;$(SolutionDir)SupportingLibraries\CLP\CommandLineParser\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SLLD$(PlatformArchitecture).lib;CLPD$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,11 +117,11 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;$(SolutionDir)SupportingLibraries\CLP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SLLD$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;$(SolutionDir)SupportingLibraries\CLP\CommandLineParser\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SLLD$(PlatformArchitecture).lib;CLPD$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,13 +139,13 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;$(SolutionDir)SupportingLibraries\CLP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SLL$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;$(SolutionDir)SupportingLibraries\CLP\CommandLineParser\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SLL$(PlatformArchitecture).lib;CLP$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -164,18 +164,20 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)Common\Headers;$(SolutionDir)SupportingLibraries\SLL;$(SolutionDir)SupportingLibraries\CLP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SLL$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SupportingLibraries\SLL\SimpleLoggingLibrary\lib;$(SolutionDir)SupportingLibraries\CLP\CommandLineParser\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SLL$(PlatformArchitecture).lib;CLP$(PlatformArchitecture).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\CommandLineParser.cpp" />
     <ClCompile Include="Source\ConfigFlag.cpp" />
     <ClCompile Include="Source\ConfigPackage.cpp" />
+    <ClCompile Include="Source\Logging.cpp" />
     <ClCompile Include="Source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -184,9 +186,10 @@
     <ClInclude Include="..\Common\Headers\Types.h" />
     <ClInclude Include="..\Common\Headers\Uncopyable.h" />
     <ClInclude Include="..\Common\Headers\Unmovable.h" />
+    <ClInclude Include="Headers\CommandLineParser.h" />
     <ClInclude Include="Headers\ConfigFlag.h" />
     <ClInclude Include="Headers\ConfigPackage.h" />
-    <ClInclude Include="Headers\Logging.hpp" />
+    <ClInclude Include="Headers\Logging.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

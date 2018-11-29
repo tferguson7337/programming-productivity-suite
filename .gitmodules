@@ -10,3 +10,7 @@
 	path = SupportingLibraries/SUTL
 	url = https://github.com/tferguson7337/simple-unit-test-library
 	branch = master
+[submodule "CLP"]
+	path = SupportingLibraries/CLP
+	url = https://github.com/tferguson7337/command-line-parser
+	branch = master

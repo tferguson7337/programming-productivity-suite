@@ -19,6 +19,15 @@
     <Filter Include="Common">
       <UniqueIdentifier>{b18aed66-6327-40c5-a9ac-267a34c75627}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility Wrappers">
+      <UniqueIdentifier>{530310cd-f505-4fec-aa78-df4e9cd92d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility Wrappers\Header Files">
+      <UniqueIdentifier>{3bd5a0e1-fa3d-40a2-aff4-128082c08652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility Wrappers\Source Files">
+      <UniqueIdentifier>{0f04c1f4-bdb9-43ff-a51f-fa800f35262d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\main.cpp">
@@ -29,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="Source\ConfigFlag.cpp">
       <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CommandLineParser.cpp">
+      <Filter>Utility Wrappers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logging.cpp">
+      <Filter>Utility Wrappers\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,8 +68,11 @@
     <ClInclude Include="..\Common\Headers\Unmovable.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Logging.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Headers\Logging.h">
+      <Filter>Utility Wrappers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\CommandLineParser.h">
+      <Filter>Utility Wrappers\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
